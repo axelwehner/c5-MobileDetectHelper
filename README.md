@@ -18,11 +18,11 @@ $md = Loader::helper('mobile_detect');
 
 ## Usage Examples
 
-### Add a CSS class (computer, mobile or tablet) to the ´body´ element 
+### Add a CSS class (computer, mobile or tablet) to the `body` element 
 
-Open your `/themes/*/elements/header.php` and add the following code below the line ´defined('C5_EXECUTE') or die("Access Denied.")´:
+Open your `/themes/*/elements/header.php` and add the following code below the line `defined('C5_EXECUTE') or die("Access Denied.")`:
 
-´
+`
 $md = Loader::helper('mobile_detect');
 $bodyClass = 'computer';
 
@@ -31,9 +31,9 @@ if ($md->isMobile()) {
 } elseif ($md->isTablet()) {
 	$bodyClass = 'tablet';
 }
-´
+`
 
-Then replace your ´<body>´ element with ´<body class="<?php echo $bodyClass; ?>">´ 
+Then replace your `<body>` element with `<body class="<?php echo $bodyClass; ?>">`
 
 
 

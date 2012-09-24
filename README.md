@@ -1,6 +1,6 @@
 # c5-MobileDetectHelper
 
-This Helper helps you to serverside detect mobile devices in your concrete5 templates. It is completly based on the PHP class "[PHP Mobile Detect](http://mobiledetect.net/)" by Serban Ghita and Victor Stanciu. I just added a few lines of code, so that you can easily load and use it in your concrete5 templates.
+This Helper allows you to serverside detect mobile devices in your concrete5 templates. It is completly based on the PHP class "[PHP Mobile Detect](http://mobiledetect.net/)" by Serban Ghita and Victor Stanciu. I just added a few lines of code, so that you can easily load and use it in your concrete5 templates.
 
 
 ## Installation
@@ -46,7 +46,7 @@ Now you can declare device secific style's in your CSS file. For example hide yo
 ### Redirect to a mobile website when visiting with a mobile device
 
 Add the following code in the very first line of your `/themes/*/elements/header.php`.
-It is important that there are no spaces before this code.
+It is important that there is no output sent to the client before executing this code.
 
     $md = Loader::helper('mobile_detect');
     if ($md->isMobile) {

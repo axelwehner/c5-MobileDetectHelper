@@ -23,7 +23,7 @@ Open your `/themes/*/elements/header.php` and add the following code:
 ### Add a CSS class to the `<body>` element 
 
 With a CSS class (in this example: computer, mobile or tablet) in your `<body>` element, you're able to use device secific style's for mobile visitors.
-Open your `/themes/*/elements/header.php` and add the following code below the line `defined('C5_EXECUTE') or die("Access Denied.")`:
+Open your `/themes/*/elements/header.php` and add the following code below the line `defined('C5_EXECUTE') or die("Access Denied.");`:
 
     $md = Loader::helper('mobile_detect');
     $bodyClass = 'computer';
